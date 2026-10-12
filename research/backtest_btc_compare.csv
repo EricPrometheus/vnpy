@@ -1,9 +1,0 @@
-﻿策略,total_return,annual_return,max_ddpercent,sharpe_ratio,total_trade_count,total_commission
-TurtleSignal,18.549,1.58,-15.921,0.264,480,34297.916
-MultiSignal,14.232,1.213,-4.18,0.469,496,25230.628
-DoubleMa,1.452,0.124,-5.358,0.058,291,13785.539
-DualThrust,0.0,0.0,0.0,0.0,0,0.0
-BollChannel,0.0,0.0,0.0,0.0,0,0.0
-KingKeltner,0.0,0.0,0.0,0.0,0,0.0
-MultiTimeframe,0.0,0.0,0.0,0.0,0,0.0
-AtrRsi,-1.733,-0.148,-5.37,-0.163,802,36369.157
