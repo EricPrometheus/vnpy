@@ -45,3 +45,24 @@ lab/
 # Type checker / linter / test caches
 .ruff_cache/
 .pytest_cache/
+
+# 模拟盘凭据文件（含 OKX API Key，禁止入库）
+research/paper/okx_setting.json
+
+# 模拟盘监控栈（本地生成物，禁止入库）
+research/paper/paper.db
+research/paper/grafana/
+research/paper/__pycache__/
+
+# 研究数据与本地生成物（体积大，禁止入库）
+research/__pycache__/
+research/alpha_lab/minute/
+research/alpha_lab/dataset/
+research/crypto_data/
+research/coinmetrics/
+*.log
+
+# 本地 AI 工具产物
+.mimosa/
+.v2c/
+.video_agent/
