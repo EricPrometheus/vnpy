@@ -66,3 +66,6 @@ research/coinmetrics/
 .mimosa/
 .v2c/
 .video_agent/
+
+# 第三方因子挖掘库（本地克隆）
+research/alphagen/

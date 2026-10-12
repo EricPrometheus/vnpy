@@ -1,0 +1,185 @@
+{
+  "meta": {
+    "roll_win": 2016,
+    "fee_per_side": 0.0002,
+    "fee_roundtrip": 0.0004,
+    "grid": {
+      "q_entry": [
+        70,
+        80,
+        90
+      ],
+      "q_exit": [
+        30,
+        40,
+        50
+      ],
+      "vol_filter": [
+        "none",
+        "p50",
+        "p70"
+      ]
+    },
+    "selection_rule": "验证段(2025)净收益最大，并列取平均持仓更长；冻结后测试段只评一次",
+    "segments": {
+      "train": [
+        "2023-10-01",
+        "2024-12-31"
+      ],
+      "valid": [
+        "2025-01-01",
+        "2025-12-31"
+      ],
+      "test": [
+        "2026-01-01",
+        "2026-09-21"
+      ]
+    },
+    "criteria": "测试段至少 2 个种子：净>0 且 平均持仓>=110.0min"
+  },
+  "seeds": {
+    "123": {
+      "formula_gp": "sub(sub(X6, sub(sub(X5, add(abs(X1), X4)), abs(add(X6, X0)))), sub(sub(abs(X5), add(abs(X1), X4)), abs(add(X6, X0))))",
+      "verify_v1_spread": {
+        "train": 8.32989e-05,
+        "valid": 4.6364e-05,
+        "test": 1.75945e-05
+      },
+      "score_lag1_autocorr": 0.226,
+      "frozen_combo": {
+        "q_entry": 90,
+        "q_exit": 30,
+        "vol_filter": "p70"
+      },
+      "valid_positive_combos": 0,
+      "valid": {
+        "net_pct": -56.9912,
+        "gross_pct": 67.5928,
+        "avg_hold_min": 20.0,
+        "episodes": 15573,
+        "trades": 31146,
+        "bars": 105120,
+        "in_market_ratio": 0.1187
+      },
+      "test": {
+        "net_pct": -66.2504,
+        "gross_pct": 24.5176,
+        "avg_hold_min": 20.9,
+        "episodes": 11346,
+        "trades": 22692,
+        "bars": 76032,
+        "in_market_ratio": 0.125
+      },
+      "monthly_net_2026": {
+        "2026-01": -11.7861,
+        "2026-02": -10.5251,
+        "2026-03": -9.0983,
+        "2026-04": -8.9298,
+        "2026-05": -0.7348,
+        "2026-06": -18.9872,
+        "2026-07": -9.6724,
+        "2026-08": 7.3808,
+        "2026-09": -3.8974
+      },
+      "positive_months": 1,
+      "criteria_pass": false
+    },
+    "7": {
+      "formula_gp": "mul(sub(X1, -0.009), X0)",
+      "verify_v1_spread": {
+        "train": 6.83575e-05,
+        "valid": 3.87859e-05,
+        "test": 1.22777e-05
+      },
+      "score_lag1_autocorr": -0.0392,
+      "frozen_combo": {
+        "q_entry": 90,
+        "q_exit": 50,
+        "vol_filter": "p70"
+      },
+      "valid_positive_combos": 0,
+      "valid": {
+        "net_pct": -184.6699,
+        "gross_pct": 26.7141,
+        "avg_hold_min": 9.6,
+        "episodes": 26423,
+        "trades": 52846,
+        "bars": 105120,
+        "in_market_ratio": 0.0964
+      },
+      "test": {
+        "net_pct": -141.4233,
+        "gross_pct": 14.8247,
+        "avg_hold_min": 9.5,
+        "episodes": 19531,
+        "trades": 39062,
+        "bars": 76032,
+        "in_market_ratio": 0.0972
+      },
+      "monthly_net_2026": {
+        "2026-01": -15.9476,
+        "2026-02": -3.5722,
+        "2026-03": -20.1046,
+        "2026-04": -12.6925,
+        "2026-05": -16.9947,
+        "2026-06": -19.7707,
+        "2026-07": -17.5878,
+        "2026-08": -18.1747,
+        "2026-09": -16.5785
+      },
+      "positive_months": 0,
+      "criteria_pass": false
+    },
+    "2026": {
+      "formula_gp": "sub(abs(add(X6, X4)), X5)",
+      "verify_v1_spread": {
+        "train": 7.24171e-05,
+        "valid": 9.0262e-06,
+        "test": -5.7401e-06
+      },
+      "score_lag1_autocorr": 0.039,
+      "frozen_combo": {
+        "q_entry": 90,
+        "q_exit": 30,
+        "vol_filter": "p70"
+      },
+      "valid_positive_combos": 0,
+      "valid": {
+        "net_pct": -159.3742,
+        "gross_pct": 14.8578,
+        "avg_hold_min": 14.7,
+        "episodes": 21779,
+        "trades": 43558,
+        "bars": 105120,
+        "in_market_ratio": 0.1219
+      },
+      "test": {
+        "net_pct": -99.7329,
+        "gross_pct": 29.5311,
+        "avg_hold_min": 14.5,
+        "episodes": 16158,
+        "trades": 32316,
+        "bars": 76032,
+        "in_market_ratio": 0.123
+      },
+      "monthly_net_2026": {
+        "2026-01": -12.768,
+        "2026-02": -8.8722,
+        "2026-03": -17.0772,
+        "2026-04": -9.9513,
+        "2026-05": -9.114,
+        "2026-06": -28.0832,
+        "2026-07": -8.3596,
+        "2026-08": 1.4453,
+        "2026-09": -6.9526
+      },
+      "positive_months": 1,
+      "criteria_pass": false
+    }
+  },
+  "verdict": {
+    "passed_seeds": [],
+    "achieved": false,
+    "runtime_sec": 6.4
+  }
+}

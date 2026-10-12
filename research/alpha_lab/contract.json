@@ -1,0 +1,134 @@
+{
+    "ADAUSDT.OKX": {
+        "long_rate": 0.0,
+        "short_rate": 0.0,
+        "size": 1.0,
+        "pricetick": 0.01
+    },
+    "APTUSDT.OKX": {
+        "long_rate": 0.0,
+        "short_rate": 0.0,
+        "size": 1.0,
+        "pricetick": 0.01
+    },
+    "ARBUSDT.OKX": {
+        "long_rate": 0.0,
+        "short_rate": 0.0,
+        "size": 1.0,
+        "pricetick": 0.01
+    },
+    "ATOMUSDT.OKX": {
+        "long_rate": 0.0,
+        "short_rate": 0.0,
+        "size": 1.0,
+        "pricetick": 0.01
+    },
+    "AVAXUSDT.OKX": {
+        "long_rate": 0.0,
+        "short_rate": 0.0,
+        "size": 1.0,
+        "pricetick": 0.01
+    },
+    "BCHUSDT.OKX": {
+        "long_rate": 0.0,
+        "short_rate": 0.0,
+        "size": 1.0,
+        "pricetick": 0.01
+    },
+    "BNBUSDT.OKX": {
+        "long_rate": 0.0,
+        "short_rate": 0.0,
+        "size": 1.0,
+        "pricetick": 0.01
+    },
+    "BTCUSDT.OKX": {
+        "long_rate": 0.0,
+        "short_rate": 0.0,
+        "size": 1.0,
+        "pricetick": 0.01
+    },
+    "DOGEUSDT.OKX": {
+        "long_rate": 0.0,
+        "short_rate": 0.0,
+        "size": 1.0,
+        "pricetick": 0.01
+    },
+    "DOTUSDT.OKX": {
+        "long_rate": 0.0,
+        "short_rate": 0.0,
+        "size": 1.0,
+        "pricetick": 0.01
+    },
+    "ETHUSDT.OKX": {
+        "long_rate": 0.0,
+        "short_rate": 0.0,
+        "size": 1.0,
+        "pricetick": 0.01
+    },
+    "LINKUSDT.OKX": {
+        "long_rate": 0.0,
+        "short_rate": 0.0,
+        "size": 1.0,
+        "pricetick": 0.01
+    },
+    "LTCUSDT.OKX": {
+        "long_rate": 0.0,
+        "short_rate": 0.0,
+        "size": 1.0,
+        "pricetick": 0.01
+    },
+    "NEARUSDT.OKX": {
+        "long_rate": 0.0,
+        "short_rate": 0.0,
+        "size": 1.0,
+        "pricetick": 0.01
+    },
+    "OPUSDT.OKX": {
+        "long_rate": 0.0,
+        "short_rate": 0.0,
+        "size": 1.0,
+        "pricetick": 0.01
+    },
+    "PEPEUSDT.OKX": {
+        "long_rate": 0.0,
+        "short_rate": 0.0,
+        "size": 1.0,
+        "pricetick": 0.01
+    },
+    "SOLUSDT.OKX": {
+        "long_rate": 0.0,
+        "short_rate": 0.0,
+        "size": 1.0,
+        "pricetick": 0.01
+    },
+    "SUIUSDT.OKX": {
+        "long_rate": 0.0,
+        "short_rate": 0.0,
+        "size": 1.0,
+        "pricetick": 0.01
+    },
+    "TRXUSDT.OKX": {
+        "long_rate": 0.0,
+        "short_rate": 0.0,
+        "size": 1.0,
+        "pricetick": 0.01
+    },
+    "UNIUSDT.OKX": {
+        "long_rate": 0.0,
+        "short_rate": 0.0,
+        "size": 1.0,
+        "pricetick": 0.01
+    },
+    "XLMUSDT.OKX": {
+        "long_rate": 0.0,
+        "short_rate": 0.0,
+        "size": 1.0,
+        "pricetick": 0.01
+    },
+    "XRPUSDT.OKX": {
+        "long_rate": 0.0,
+        "short_rate": 0.0,
+        "size": 1.0,
+        "pricetick": 0.01
+    }
+}

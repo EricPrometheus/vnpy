@@ -1,0 +1,105 @@
+{
+  "meta": {
+    "tool": "gplearn",
+    "seed": 2026,
+    "population": 500,
+    "generations": 10,
+    "hall_of_fame": 40,
+    "function_set": [
+      "add",
+      "sub",
+      "mul",
+      "div",
+      "abs"
+    ],
+    "features": {
+      "ret1": "close/ts_delay(close,1)-1",
+      "mom3": "close/ts_delay(close,3)-1",
+      "mom12": "close/ts_delay(close,12)-1",
+      "amp": "(high-low)/close",
+      "body": "(close-open)/close",
+      "upper_shadow": "(high-max(open,close))/close",
+      "lower_shadow": "(min(open,close)-low)/close",
+      "vola20": "ts_std(close/ts_delay(close,1)-1,20)",
+      "volr288": "volume/ts_mean(volume,288)",
+      "gap": "open/ts_delay(close,1)-1"
+    },
+    "label": "close.shift(-1)/close - 1（按币分组，下一根 5m 收益）",
+    "fitness": "尾部价差：每币因子值段内分位前/后 20% 标签均值之差，5 币平均",
+    "segments": {
+      "train": [
+        "2023-10-01",
+        "2024-12-31"
+      ],
+      "valid": [
+        "2025-01-01",
+        "2025-12-31"
+      ],
+      "test": [
+        "2026-01-01",
+        "2026-09-21"
+      ]
+    },
+    "fee_roundtrip": 0.0004,
+    "fitness_latency_sec": {
+      "train": 0.019800899986876175,
+      "full": 0.07578450001892634
+    },
+    "runtime_sec": 152.5
+  },
+  "candidates": [
+    {
+      "hof_col": 0,
+      "formula_gp": "sub(abs(add(X6, X4)), X5)",
+      "vnpy_text": "abs((min(open, close) - low) / close + (close - open) / close) - (high - max(open, close)) / close",
+      "train_spread": 7.241710916906682e-05,
+      "valid_spread": 9.026244728308278e-06,
+      "test_spread": -5.740074372231967e-06,
+      "test_net": -0.000405740074372232,
+      "valid_top_leg": 9.166353631325869e-06,
+      "valid_bottom_leg": 1.4010890301759035e-07,
+      "test_top_leg": 4.567673238623693e-06,
+      "test_bottom_leg": 1.030774761085566e-05,
+      "monthly_2026": {
+        "2026-01": {
+          "gross": 6.353e-05,
+          "net": -0.00033647
+        },
+        "2026-02": {
+          "gross": 5.21e-06,
+          "net": -0.00039479
+        },
+        "2026-03": {
+          "gross": -0.00011484,
+          "net": -0.00051484
+        },
+        "2026-04": {
+          "gross": -3.244e-05,
+          "net": -0.00043244
+        },
+        "2026-05": {
+          "gross": -1.745e-05,
+          "net": -0.00041745
+        },
+        "2026-06": {
+          "gross": -9.332e-05,
+          "net": -0.00049332
+        },
+        "2026-07": {
+          "gross": -2.553e-05,
+          "net": -0.00042553
+        },
+        "2026-08": {
+          "gross": 0.00011698,
+          "net": -0.00028302
+        },
+        "2026-09": {
+          "gross": 8.959e-05,
+          "net": -0.00031041
+        }
+      },
+      "test_spread_fixed_thr": -8.38632797882734e-06,
+      "test_net_fixed_thr": -0.00040838632797882737
+    }
+  ]
+}
