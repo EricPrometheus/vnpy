@@ -136,6 +136,8 @@ class Exchange(Enum):
 
     # Special Function
     LOCAL = "LOCAL"         # For local generated data
+    OKX = "OKX"                 # OKX cryptocurrency exchange
+    BINANCE = "BINANCE"         # Binance cryptocurrency exchange
     GLOBAL = "GLOBAL"       # For those exchanges not supported yet
 
 
